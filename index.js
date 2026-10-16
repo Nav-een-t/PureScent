@@ -37,7 +37,7 @@ function m_close() {
 
 function numberl() {
     let inpt = document.querySelector('.input-text');
-    inpt.value = '+91'
+    inpt.value = '+91 '
 }
 
 
