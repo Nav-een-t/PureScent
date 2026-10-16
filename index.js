@@ -3,43 +3,30 @@ function drop() {
 
     m.classList.toggle('show');
 }
-function drop_menu() {
-    let m = document.getElementById('dropdown-menu');
+function drop_menu(event) {
+    if (event) event.stopPropagation();
 
-    m.classList.toggle('show');
+    const dropMenu = document.getElementById('dropdown-menu');
+    const menuC = document.getElementById('menu_c');
+
+    dropMenu.classList.toggle('show');
+    menuC.classList.remove('show');
 }
 
 function click() {
     let drp = document.getElementById('menu_c');
     let dropdown = document.getElementById('dropdown');
+    let dropMenu = document.getElementById('dropdown-menu');
 
     drp.classList.add('show');
     dropdown.classList.remove('show');
+    dropMenu.classList.remove('show');
 }
-
-function closeCat() {
-    let h = document.getElementById('dropdown');
-    let z = document.getElementById('menu_c');
-    let g = document.getElementById('dropdown-menu');
-
-    h.classList.remove('show');
-    z.classList.remove('show');
-    g.classList.remove('show');
-}
-
-function m_close() {
-    let menu = document.getElementById('menu_c');
-    let drop_menu = document.getElementById('dropdown-menu');
-    menu.classList.remove('show');
-    drop_menu.classList.remove('show');
-}
-
 
 function numberl() {
     let inpt = document.querySelector('.input-text');
     inpt.value = '+91 '
 }
-
 
 // PopUp
 function pop(pimage, ptext, pprice, pstrike) {
