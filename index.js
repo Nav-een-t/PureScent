@@ -35,6 +35,12 @@ function m_close() {
 }
 
 
+function numberl() {
+    let inpt = document.querySelector('.input-text');
+    inpt.value = '+91'
+}
+
+
 // PopUp
 function pop(pimage, ptext, pprice, pstrike) {
     let p = document.createElement('div')
