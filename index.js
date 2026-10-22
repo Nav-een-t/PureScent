@@ -8,16 +8,27 @@ function drop_menu(event) {
 
     const dropMenu = document.getElementById('dropdown-menu');
     const menuC = document.getElementById('menu_c');
-
+    
     dropMenu.classList.toggle('show');
     menuC.classList.remove('show');
+}
+
+function close_drop() {
+    let drp = document.getElementById('menu_c');
+    let dropdown = document.getElementById('dropdown');
+    const dropMenu = document.getElementById('dropdown-menu');
+
+    dropMenu.classList.remove('show');
+    drp.classList.remove('show');
+    dropdown.classList.remove('show');
+
 }
 
 function click() {
     let drp = document.getElementById('menu_c');
     let dropdown = document.getElementById('dropdown');
     let dropMenu = document.getElementById('dropdown-menu');
-
+    
     drp.classList.add('show');
     dropdown.classList.remove('show');
     dropMenu.classList.remove('show');
